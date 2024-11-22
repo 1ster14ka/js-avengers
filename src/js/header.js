@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const menu = document.querySelector('.header-menu');
   const closeBtn = document.querySelector('.header-close');
   const navLinks = document.querySelectorAll('.header-nav a');
+  const switchInput = document.getElementById('switch');
 
   burgerBtn.addEventListener('click', () => {
     menu.classList.add('active');
@@ -13,8 +14,15 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   navLinks.forEach(link => {
-    link.addEventListener('click', () => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
       menu.classList.remove('active');
+      const targetId = link.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
+
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     });
   });
 
@@ -23,4 +31,12 @@ document.addEventListener('DOMContentLoaded', () => {
       menu.classList.remove('active');
     }
   });
+});
+
+switchInput.addEventListener('change', () => {
+  if (switchInput.checked) {
+    console.log('Switch ON');
+  } else {
+    console.log('Switch OFF');
+  }
 });
