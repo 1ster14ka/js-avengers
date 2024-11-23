@@ -9,7 +9,7 @@ body {
   overflow-x: hidden;
 }
 
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   .container {
     max-width: 360px;
     padding: 80px 20px 56px 20px;
@@ -192,6 +192,10 @@ body {
     padding-left: 208px;
     margin-top: 312px;
   } */
+
+  .about {
+    text-align: left;
+  }
 
   .content-wrapper {
     gap: 136px;
