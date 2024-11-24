@@ -2,6 +2,19 @@
   padding-top: 80px;
   background-color: white;
 }
+.ac-trigger::after {
+  display: none !important;
+}
+
+.ac-trigger {
+  padding: 0 !important;
+  border-bottom: 1px solid #ccc;
+  width: 32px !important;
+}
+
+.ac.is-active .ac-panel {
+  overflow: visible !important;
+}
 
 .questions-container {
   max-width: 320px;
@@ -22,42 +35,44 @@
   color: #00b068;
 }
 
-.ac-trigger {
+.question-cont {
   padding-top: 28px;
   padding-left: 24px;
   padding-right: 24px;
   display: flex;
   align-items: flex-start;
-  max-width: 272px;
   min-height: 112px;
 }
 
 .ac {
   display: flex;
   flex-direction: column;
+  border-left: none !important;
+  border-right: none !important;
+  border-top: none !important;
   border-bottom: 1px solid #e4e5e6;
+  margin-top: 0 !important;
 }
 
-.ac h3 {
-  max-width: 224px;
+.ac-header {
+  max-width: 224px !important;
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
-  letter-spacing: 0.03;
+  letter-spacing: 0.03em;
   line-height: 1.5em;
   font-weight: 500;
   text-transform: uppercase;
   text-align: left;
   margin-bottom: 24px;
-  margin-right: 20px;
+  margin-right: 20px !important;
 }
 
 .ac-panel {
-  display: none;
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 28px;
   max-width: 272px;
-  /* display: flex; */
+  display: flex;
   align-items: center;
 }
 
@@ -86,25 +101,28 @@
   .faq-heading {
     font-size: 108px;
     line-height: 1.148em;
-    letter-spacing: 0.02;
+    letter-spacing: 0.02em;
     margin-bottom: 60px;
   }
 
-  .ac-trigger {
+  .question-cont {
     min-width: 656px;
-    display: flex;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-start !important;
     justify-content: space-between;
-    max-height: 60px;
     min-height: 60px;
-    padding-bottom: 28px;
+    padding-bottom: 0;
   }
 
-  .ac h3 {
-    max-width: 600px;
+  .ac {
+    justify-content: center !important;
+  }
+
+  .ac-header {
+    max-width: 600px !important;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
-    letter-spacing: 0.02;
+    letter-spacing: 0.02em;
     line-height: 1.6em;
     font-weight: 500;
     text-transform: uppercase;
@@ -137,7 +155,7 @@
     flex-wrap: wrap;
     position: relative;
     background: url(../img/bg-img/bg-desk-faq.png) no-repeat;
-    background-position: 20px bottom;
+    background-position: 20px 500px;
     background-size: auto;
   }
 
@@ -163,18 +181,19 @@
     letter-spacing: 0.08em;
     line-height: 1.5em;
     font-weight: 300;
+    z-index: 10;
   }
 
-  .ac-trigger {
+  .question-cont {
     padding-top: 28px;
     padding-left: 24px;
     padding-right: 24px;
-    min-width: 592px;
-    min-height: 60px;
+    min-width: 592px !important;
+    min-height: 60px !important;
     max-height: none;
   }
 
-  .ac h3 {
+  .ac-header {
     max-width: 488px;
   }
 }

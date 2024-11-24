@@ -3,6 +3,7 @@
 const projects = document.querySelectorAll(".project-card");
 const btnLoadMore = document.querySelector(".js-load-more");
 const btnShowLess = document.querySelector(".js-show-less");
+const sectionTitle = document.querySelector(".catalog-title");
 
 let visibleProjects = 3;
 
@@ -32,6 +33,8 @@ btnLoadMore.addEventListener("click", () => {
 btnShowLess.addEventListener("click", () => {
     visibleProjects = 3;
     showProjects();
+
+    sectionTitle.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
 
 showProjects();

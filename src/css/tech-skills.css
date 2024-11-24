@@ -1,110 +1,53 @@
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.tech-skills {
-  margin-top: 80px;
-  margin-bottom: 80px;
-}
-
 .section-skills {
-  font-family: 'Poppins', sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 16px;
+  padding-top: 164px;
+}
+
+.hidden-title {
+  visibility: hidden;
+  display: none;
+}
+
+.marquee {
   overflow: hidden;
-}
-.skills-bar {
-  padding: 32px 0px;
-  max-width: 1392px;
-  width: 100%;
-  height: 104px;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
+  position: relative;
+  font-family: 'Pridi', sans-serif;
+  font-weight: 600;
+  font-size: 34px;
   text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #bcdfd1;
+  height: 128px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: 16px;
 }
 
-.top-bar {
-  background: #bcdfd1;
-}
-.skills-text-top {
-  color: #292929;
-}
-.skills-point-top {
-  display: flex;
-  align-items: center;
-  border-radius: 2px;
-  width: 8px;
-  height: 8px;
-  color: #00b068;
-}
-.bottom-bar {
-  background: #e4e5e6;
-  transform: rotate(3deg);
-}
-.skills-text-bottom {
-  color: #00b068;
-}
-.skills-point-bottom {
-  display: flex;
-  align-items: center;
-  border-radius: 2px;
-  width: 8px;
-  height: 8px;
-  color: #292929;
+.marquee__inner {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 10s linear infinite;
 }
 
-@media only screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
+.marquee__inner p {
+  display: inline;
+  margin: 0;
+}
+
+.marquee--reverse {
+  background-color: #e4e5e6;
+  transform: rotate(2deg);
+  height: 128px;
+}
+
+.marquee--reverse .marquee__inner {
+  animation-direction: reverse;
+  transform: rotate(-2deg);
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
   }
-  .tech-skills {
-    margin-top: 124px;
-    margin-bottom: 124px;
-  }
-
-  .skills-bar {
-    padding: 40px 0px;
-    max-width: 1517px;
-    width: 100%;
-    height: 128px;
-    font-size: 36px;
-    line-height: 1.4;
-    letter-spacing: 0.01em;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-
-  .tech-skills {
-    margin-top: 164px;
-    margin-bottom: 164px;
-  }
-
-  .skills-bar {
-    padding: 40px 0px;
-    max-width: 1517px;
-    width: 100%;
+  to {
+    transform: translateX(-100%);
   }
 }

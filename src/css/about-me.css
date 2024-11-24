@@ -1,0 +1,195 @@
+.section-about {
+  padding-top: 80px;
+}
+.about-title {
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 123%;
+  letter-spacing: 0.03em;
+  font-family: 'Impact', sans-serif;
+  margin-bottom: 40px;
+}
+.span-me {
+  color: #00b068;
+}
+
+.img-about {
+  margin-bottom: 40px;
+  border-radius: 20px;
+  border-color: transparent;
+}
+
+.text-about {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  font-family: 'Poppins', sans-serif;
+}
+.title-about {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 32px;
+}
+
+.role-item .text-about,
+.education-item .text-about {
+  margin-left: 32px;
+}
+
+.text-bio {
+  margin-bottom: 24px;
+  margin-top: 32px;
+}
+.wrapp-education {
+  margin-top: 40px;
+}
+
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.wrapp-role {
+  margin-top: 40px;
+}
+
+.role-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.education-item {
+  position: relative;
+}
+
+.role-item {
+  position: relative;
+}
+
+.wrapp-bio-text p:not(:last-of-type) {
+  margin-bottom: 24px;
+}
+
+.wrapp-about-text .text-about::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  border-radius: 1px;
+  width: 4px;
+  height: 4px;
+  background-color: #00b068;
+}
+
+@media only screen and (min-width: 768px) {
+  .wrapp-bio-text {
+    max-width: 336px;
+  }
+  .section-about {
+    padding-top: 124px;
+  }
+
+  .about-title {
+    font-size: 108px;
+    line-height: 115%;
+    letter-spacing: 0.02em;
+  }
+
+  .img-about {
+    height: 392px;
+    align-self: flex-end;
+    margin-top: 368px;
+    margin-bottom: 0;
+  }
+
+  .wrapp-education {
+    margin-top: 62px;
+  }
+  .wrapp-role {
+    margin-top: 62px;
+  }
+
+  .wrapp-bio {
+    display: flex;
+    gap: 32px;
+  }
+
+  .bg-img {
+    position: absolute;
+    background-image: image-set(
+      url('../img/bg-img/bg-tab-about.png') 1x,
+      url('../img/bg-img/bg-tab-about@2x.png') 2x
+    );
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 336px;
+    height: 252px;
+  }
+
+  .title-about {
+    font-size: 36px;
+    line-height: 133%;
+    letter-spacing: 0.01em;
+  }
+
+  .wrapp-about-text {
+    display: flex;
+    gap: 32px;
+  }
+
+  .wrapp-education,
+  .wrapp-role {
+    flex: 1;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .wrapp-bio-text {
+    max-width: 488px;
+  }
+
+  .wrapp-bg {
+    position: relative;
+  }
+  .bg-img {
+    background-image: image-set(
+      url('../img/bg-img/bg-desk-about.png') 1x,
+      url('../img/bg-img/bg-desk-about@2x.png') 2x
+    );
+    width: 384px;
+    height: 288px;
+
+    top: 40px;
+    left: 104px;
+  }
+
+  .section-about {
+    padding-top: 164px;
+  }
+
+  .img-about {
+    height: 448px;
+    align-self: flex-end;
+    margin-top: 272px;
+    margin-left: 208px;
+    margin-bottom: 0;
+  }
+
+  .wrapp-bio {
+    gap: 132px;
+  }
+
+  .wrapp-bio-text {
+    max-width: 488px;
+  }
+  .wrapp-about-text {
+    margin-left: 208px;
+    gap: 136px;
+  }
+}

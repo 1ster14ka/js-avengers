@@ -3,12 +3,81 @@
 <symbol id="icon-user-1" viewBox="0 0 32 32">
 <path fill="none" stroke="#00b068" style="stroke: var(--color1, #00b068)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M26.667 28c0-1.861 0-2.791-0.229-3.548-0.529-1.708-1.848-3.026-3.518-3.546l-0.038-0.010c-0.757-0.229-1.687-0.229-3.548-0.229h-6.667c-1.861 0-2.791 0-3.548 0.229-1.708 0.529-3.027 1.848-3.546 3.518l-0.010 0.038c-0.229 0.757-0.229 1.687-0.229 3.548M16 16c3.314 0 6-2.686 6-6s-2.686-6-6-6v0c-3.314 0-6 2.686-6 6s2.686 6 6 6v0z"></path>
 </symbol>
-<symbol id="icon-vector-down-1" viewBox="0 0 50 32">
-<path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="7.1111" d="M46.222 3.556l-21.333 21.333-21.333-21.333"></path>
+
+<symbol id="icon-x" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <line x1="3" y1="3" x2="21" y2="21" stroke="black" stroke-width="2" stroke-linecap="round"/>
+  <line x1="3" y1="21" x2="21" y2="3" stroke="black" stroke-width="2" stroke-linecap="round"/>
 </symbol>
-<symbol id="icon-vector-up-1" viewBox="0 0 50 32">
-<path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="7.1111" d="M46.222 28.444l-21.333-21.333-21.333 21.333"></path>
+
+<symbol id="icon-vector-down" viewBox="0 0 50 32">
+  <path 
+    d="M46.222 3.556l-21.333 21.333-21.333-21.333" 
+    stroke="currentColor" 
+    fill="none" 
+    stroke-linejoin="miter" 
+    stroke-linecap="round" 
+    stroke-width="2"
+  ></path>
 </symbol>
+
+<symbol id="icon-burger" viewBox="0 0 44 32">
+<path d="M0.668 30.054v-2.667h42.667v2.667h-42.667zM0.668 17.334v-2.667h42.667v2.667h-42.667zM0.668 4.614v-2.667h42.667v2.667h-42.667z"></path>
+</symbol>
+
+
+<symbol id="icon-vector-up" viewBox="0 0 50 32">
+  <path 
+    d="M46.222 28.444l-21.333-21.333-21.333 21.333" 
+    stroke="currentColor" 
+    fill="none" 
+    stroke-linejoin="miter" 
+    stroke-linecap="round" 
+    stroke-width="2"
+  ></path>
+</symbol>
+
+
+<symbol id="icon-arrow-narrow-right" viewBox="0 0 32 32">
+  <path 
+    d="M5.333 16h21.333" 
+    stroke="currentColor" 
+    fill="none" 
+    stroke-linejoin="round" 
+    stroke-linecap="round" 
+    stroke-width="2.6667"
+  ></path>
+  <path 
+    d="M18.667 8l8 8-8 8" 
+    stroke="currentColor" 
+    fill="none" 
+    stroke-linejoin="round" 
+    stroke-linecap="round" 
+    stroke-width="2.6667"
+  ></path>
+</symbol>
+
+
+
+<symbol id="icon-arrow-narrow-left" viewBox="0 0 32 32">
+  <path 
+    d="M26.667 16h-21.333" 
+    stroke="currentColor" 
+    fill="none" 
+    stroke-linejoin="round" 
+    stroke-linecap="round" 
+    stroke-width="2.6667"
+  ></path>
+  <path 
+    d="M13.333 24l-8-8 8-8" 
+    stroke="currentColor" 
+    fill="none" 
+    stroke-linejoin="round" 
+    stroke-linecap="round" 
+    stroke-width="2.6667"
+  ></path>
+</symbol>
+
+
 <symbol id="icon-x" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M24 8l-16 16"></path>
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M8 8l16 16"></path>
