@@ -1,0 +1,137 @@
+/* Общий стиль */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  .benefits-section {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  .benefits-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .benefits-header h2 {
+    font-size: 6rem;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #000;
+    margin-bottom: 40px;
+    flex: 1;
+  }
+  
+  .benefits-highlight {
+    color: #00aa44;
+  }
+  
+  .benefit-item-inline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 0 0 25%;
+  }
+  
+  .benefits-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+  
+  .benefit-item {
+    background: #fff;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .benefit-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .benefit-item .icon img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .benefit-item h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+  }
+  
+  .benefit-item p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  /* Медиа-запросы */
+  
+  /* Экраны 768px и меньше */
+  @media (max-width: 768px) {
+    .benefits-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .benefits-header h2 {
+      font-size: 4rem;
+    }
+  
+    .benefit-item-inline {
+      flex: 1 1 100%;
+      margin: 20px 0;
+    }
+  
+    .benefits-list {
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+  }
+  
+  /* Экраны 360px и меньше */
+  @media (max-width: 360px) {
+    .benefits-header h2 {
+      font-size: 3rem;
+      text-align: center;
+    }
+  
+    .benefit-item-inline {
+      margin: 0 auto 20px auto;
+    }
+  
+    .benefits-list {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  
+    .benefit-item {
+      padding: 10px;
+    }
+  
+    .benefit-item h3 {
+      font-size: 1.2rem;
+    }
+  
+    .benefit-item p {
+      font-size: 0.9rem;
+    }
+  }
+  
