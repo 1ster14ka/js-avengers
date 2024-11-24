@@ -1,6 +1,6 @@
 .faq-section {
   padding-top: 80px;
-  background-color: white;
+  background-color: #f0f0f0;
 }
 .ac-trigger::after {
   display: none !important;
@@ -18,11 +18,12 @@
 
 .questions-container {
   max-width: 320px;
+  background-color: #f0f0f0;
 }
 
 .faq-heading {
   font-family: 'Impact', sans-serif;
-  color: #292929;
+  color: #292929 !important;
   font-size: 52px;
   margin-bottom: 40px;
   max-width: 320px;
@@ -55,6 +56,7 @@
 }
 
 .ac-header {
+  color: #292929 !important;
   max-width: 224px !important;
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
@@ -64,7 +66,7 @@
   text-transform: uppercase;
   text-align: left;
   margin-bottom: 24px;
-  margin-right: 20px !important;
+  margin-right: 16px !important;
 }
 
 .ac-panel {
@@ -77,12 +79,12 @@
 }
 
 .ac-text {
+  color: #292929 !important;
   max-width: 272px;
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  letter-spacing: 0.05em;
-  line-height: 1.5em;
-  font-weight: 300;
+  letter-spacing: 0.05em !important;
+  line-height: 1.5em !important;
+  font-weight: 300 !important;
+  padding-left: 0 !important;
 }
 
 .faq-icon {
@@ -108,7 +110,7 @@
   .question-cont {
     min-width: 656px;
     flex-direction: row;
-    align-items: flex-start !important;
+    align-items: flex-start;
     justify-content: space-between;
     min-height: 60px;
     padding-bottom: 0;
@@ -119,7 +121,7 @@
   }
 
   .ac-header {
-    max-width: 600px !important;
+    min-width: 488px;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     letter-spacing: 0.02em;
@@ -128,15 +130,16 @@
     text-transform: uppercase;
     text-align: left;
     margin-bottom: 0;
-    margin-right: 0;
+    margin-right: 24px !important;
   }
+
   .ac-text {
     min-width: 656px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    letter-spacing: 0.08em;
-    line-height: 1.5em;
-    font-weight: 300;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 16px !important;
+    letter-spacing: 0.08em !important;
+    line-height: 1.5em !important;
+    font-weight: 300 !important;
     text-align: left;
   }
 }
@@ -176,12 +179,6 @@
 
   .ac-text {
     min-width: 544px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    letter-spacing: 0.08em;
-    line-height: 1.5em;
-    font-weight: 300;
-    z-index: 10;
   }
 
   .question-cont {
@@ -191,6 +188,7 @@
     min-width: 592px !important;
     min-height: 60px !important;
     max-height: none;
+    align-items: center;
   }
 
   .ac-header {
