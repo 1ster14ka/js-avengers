@@ -1,3 +1,4 @@
+import './js/modal.js';
 import './js/header.js';
 import './js/hero.js';
 import './js/my-projects.js';

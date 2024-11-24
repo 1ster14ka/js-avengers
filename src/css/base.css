@@ -84,3 +84,12 @@ main:has(.back-link) {
   font-weight: 600;
   font-style: normal;
 }
+
+section,
+.header {
+  background-color: #f0f0f0;
+}
+
+.hover-link:hover {
+  color: #00b068;
+}

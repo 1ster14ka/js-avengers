@@ -1,0 +1,72 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  min-width: 320px;
+  max-width: 360px;
+}
+.logo {
+  color: green;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0.06em;
+  font-family: 'Impact', Arial, sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+.logo-header-span {
+  color: #292929;
+}
+.navigation {
+  display: none;
+}
+.nav-list {
+}
+.nav-item {
+}
+.icon-burger {
+}
+
+.burger-btn {
+  border: none;
+  background-color: transparent;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .navigation {
+    display: flex;
+  }
+
+  .burger-btn {
+    display: none;
+  }
+
+  .nav-list-head {
+    display: flex;
+    gap: 40px;
+  }
+
+  .header-container {
+    max-width: 768px;
+    padding: 32px;
+  }
+
+  .nav-item-head a {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .header-container {
+    max-width: 1280px;
+  }
+}

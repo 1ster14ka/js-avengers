@@ -1,137 +1,156 @@
-/* Общий стиль */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+.benefits {
+  padding-top: 80px;
+}
+
+.bg-img-benef {
+  display: none;
+}
+
+.benef-middle {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.benef-middle li {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.title-benef {
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 123%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
+  font-family: 'Impact', sans-serif;
+  margin-bottom: 40px;
+}
+.text-green {
+  color: #00b068;
+}
+.benef-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.benef-item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.benef-subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+}
+.benef-text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  font-family: 'Poppins', sans-serif;
+}
+
+.svg {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #bcdfd1;
+  border-radius: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .title-benef {
+    max-width: 704px;
+    font-weight: 400;
+    font-size: 108px;
+    line-height: 115%;
+    letter-spacing: 0.02em;
+    margin-bottom: 0;
   }
-  
-  .benefits-section {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 40px 20px;
+
+  .benef-item {
+    max-width: 336px;
   }
-  
-  .benefits-header {
+
+  .benef-item:nth-child(1) {
+    align-self: flex-end;
+  }
+  .benef-item:nth-last-child(1) {
+    align-self: flex-end;
+    margin-top: 32px;
+  }
+
+  .benef-middle {
+    flex-direction: row;
+  }
+
+  .benef-middle li {
+    max-width: 336px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .benef-subtitle {
+    font-size: 20px;
+    line-height: 160%;
+  }
+
+  .benef-list {
+    padding-top: 274px;
+  }
+
+  .benef-item {
+    max-width: 384px;
+  }
+
+  .benef-middle {
+    /* display: flex;
+    gap: 32px; */
+    margin-bottom: 0;
+  }
+  .test {
     display: flex;
-    align-items: flex-start;
-    gap: 20px;
-  }
-  
-  .benefits-header h2 {
-    font-size: 6rem;
-    font-weight: bold;
-    line-height: 1.2;
-    color: #000;
-    margin-bottom: 40px;
-    flex: 1;
-  }
-  
-  .benefits-highlight {
-    color: #00aa44;
-  }
-  
-  .benefit-item-inline {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: #fff;
-    border-radius: 16px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    flex: 0 0 25%;
-  }
-  
-  .benefits-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: 32px;
   }
-  
-  .benefit-item {
-    background: #fff;
-    border-radius: 16px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.2s ease;
+  .benef-item:nth-last-child(1) {
+    margin-top: 0;
   }
-  
-  .benefit-item:hover {
-    transform: scale(1.05);
+
+  .test li {
+    max-width: 384px;
   }
-  
-  .benefit-item .icon img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
+
+  .benefits {
+    padding-top: 164px;
   }
-  
-  .benefit-item h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #000;
+
+  .container-benef {
+    position: relative;
+    padding: 0 32px;
   }
-  
-  .benefit-item p {
-    font-size: 1rem;
-    color: #666;
-    line-height: 1.5;
+
+  .title-benef {
+    position: absolute;
+    top: 0;
+    left: 32px;
   }
-  
-  /* Медиа-запросы */
-  
-  /* Экраны 768px и меньше */
-  @media (max-width: 768px) {
-    .benefits-header {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 10px;
-    }
-  
-    .benefits-header h2 {
-      font-size: 4rem;
-    }
-  
-    .benefit-item-inline {
-      flex: 1 1 100%;
-      margin: 20px 0;
-    }
-  
-    .benefits-list {
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-    }
+
+  .bg-img-benef {
+    display: block;
+    width: 526px;
+    position: absolute;
+    top: -116px;
+    right: 32px;
+    height: 408px;
   }
-  
-  /* Экраны 360px и меньше */
-  @media (max-width: 360px) {
-    .benefits-header h2 {
-      font-size: 3rem;
-      text-align: center;
-    }
-  
-    .benefit-item-inline {
-      margin: 0 auto 20px auto;
-    }
-  
-    .benefits-list {
-      grid-template-columns: 1fr;
-      gap: 20px;
-    }
-  
-    .benefit-item {
-      padding: 10px;
-    }
-  
-    .benefit-item h3 {
-      font-size: 1.2rem;
-    }
-  
-    .benefit-item p {
-      font-size: 0.9rem;
-    }
-  }
-  
+}

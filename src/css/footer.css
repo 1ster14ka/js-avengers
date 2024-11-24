@@ -11,11 +11,11 @@
   height: auto;
 }
 .container {
-  min-width: 320px;
+  /* min-width: 320px;
   margin: 0 auto;
-  padding: 0 auto;
-  background-color: #e4e5e6;
-  border-top: 1px solid var(--light-light-grey);
+  padding: 0 auto; */
+  /* background-color: #e4e5e6;
+  border-top: 1px solid var(--light-light-grey); */
 }
 .footer-logo {
   padding: 40px 0 24px;
@@ -82,12 +82,12 @@
   .footer {
     padding: 60px 40px 32px;
   }
-  .container {
+  /* .container {
     max-width: 640px;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-  }
+  } */
   .footer-social-links {
     flex-direction: row;
     gap: 32px;
@@ -105,14 +105,14 @@
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1280px) {
-  .container {
+  /* .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     max-width: 1280px;
     margin: 0 auto;
-  }
+  } */
 
   .footer-logo {
   }
