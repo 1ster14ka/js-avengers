@@ -1,17 +1,29 @@
+.header-text{
+top: 0px;
+left: 32px;
+vertical-align: middle;
+text-align: left;
+}
 .panorama {
   font-family: "Poppins Light";
+  font-weight: 400; 
+  color: #555; 
+  margin: 0; 
+  text-align: left;
   font-size: 16px;
   letter-spacing: 0.2px;
   line-height: 24px;
 }
-
 .tekst{
+  text-align: left;
   font-family: "Poppins Regular";
-  font-size: 20px;
-  letter-spacing: 0.5px;
-  line-height: 32px;
+  font-weight: 600; 
+  text-transform: uppercase; 
+  font-size: 1.2rem;
+  margin-bottom: 8px; 
+  color: #333; 
+  text-align: left;
 }
-
 .future {
   font-family: Impact;
   font-size: 108px;
@@ -27,9 +39,18 @@
   line-height: 124px;
 }
 .benefits-section {
-  max-width: 1280px;
+  background-color: #f0f0f0;
+  width: 100%;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 140px 32px 0 32px;
+  display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+gap: 10px;
+}
+.benefits-section.dark-theme{
+  background-color: #1E2023;
 }
 
 .benefits-header {
@@ -37,106 +58,57 @@
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 40px;
+  flex-direction: column; 
+  max-width: 800px;
+  max-height: 380px;
 }
-
-.header-text h1 {
-  font-size: 6rem;
+.hend {
+  font-size: 136px;
+letter-spacing: 1.8px;
   font-weight: bold;
-  line-height: 1.2;
   color: #000;
+  margin: 0; 
 }
-
-.communication-item {
-  max-width: 400px;
-  text-align: center;
+.expertise-item {
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+gap: 16px;
+padding: 0px;
+border-radius: 16px;
+  z-index: 2;
 }
-
-.communication-item .icon img {
+.icon {
+  display: inline-block; /* Это нужно для выравнивания */
   width: 50px;
   height: 50px;
   margin-bottom: 10px;
 }
 
+.icon svg {
+  fill: currentColor; /* Наследует цвет текста */
+}
 .benefits-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
+  list-style: none;
+left: 0px;
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: flex-start;
+gap: 32px;
+padding: 0px;
 }
-
 .benefit-item {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+  text-align: left; 
 }
-
-.benefit-item .icon img {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 10px;
-}
-
-.benefit-item h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #000;
-}
-
-.benefit-item p {
-  font-size: 1rem;
-  color: #666;
-  line-height: 1.5;
-}
-
-
 .background-decor {
   position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -1;
+  top: 48px;
+  right: 32px;
+  z-index: 1;
+  width: 526px;
+height: 408px;
 }
-
-.background-decor img {
-  width: 500px;
-  height: auto;
-}
-
-@media (max-width: 768px) {
-  .benefits-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
-  .benefits-header h2 {
-    font-size: 4rem;
-  }
-
-  .benefit-item-inline {
-    flex: 1 1 100%;
-    margin: 20px 0;
-  }
-
-  .benefits-list {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-}
-
-@media (max-width: 360px) {
-  .benefits-header h2 {
-    font-size: 3rem;
-    text-align: center;
-  }
-
-  .benefits-list {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .benefit-item h3 {
-    font-size: 1.2rem;
-  }
-
-  .benefit-item p {
-    font-size: 0.9rem;
-  }
-}
-  
