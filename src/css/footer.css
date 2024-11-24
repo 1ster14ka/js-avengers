@@ -9,10 +9,17 @@
 .footer {
   max-width: 100%;
   height: auto;
+  min-width: 400px;
+}
+.container-mob {
+  padding: 40px 20px 24px;
 }
 
 .footer-logo {
-  padding: 40px 0 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo-span {
@@ -23,6 +30,7 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--light-black);
+  padding-left: 90px;
 }
 
 .logo-green-span {
@@ -32,7 +40,7 @@
   line-height: 100%;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: var(--light-accent-green); /* Fixed variable name */
+  color: var(--light-accent-green);
 }
 
 .footer-social-links {
@@ -44,9 +52,9 @@
   color: var(--light-black);
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 24px;
   margin: 0;
-  padding: 0;
+  padding: 0 60px;
   list-style: none;
 }
 
@@ -61,7 +69,7 @@
 }
 
 .footer-copyright {
-  padding: 24px 0;
+  padding: 40px 0 24px;
   font-family: var(--font-family);
   font-weight: 300;
   font-size: 14px;
@@ -73,18 +81,28 @@
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
-  .footer {
-    padding: 60px 40px 32px;
-  }
-  .container-tablet {
+  .container-mob {
+    padding: 40px 32px;
     max-width: 768px;
+
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
   }
+  .footer-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    padding-bottom: 32px;
+  }
+  .logo-span {
+    padding: 0;
+  }
   .footer-social-links {
     flex-direction: row;
-    gap: 32px;
+    gap: 40px;
+    padding: 0;
   }
   .footer-copyright {
     display: flex;
@@ -92,35 +110,39 @@
     align-items: center;
     justify-content: center;
     text-align: right;
-    margin-left: 110px; /* Відступ ліворуч для ширини від 768px */
+    padding: 40px 0 24px;
+    margin-left: 180px;
   }
 }
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1280px) {
-  .container-desktop {
+  .container-mob {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     max-width: 1280px;
     margin: 0 auto;
+    padding: 40px 32px 0;
   }
   .footer-social-links {
     display: flex;
     flex-direction: row;
     gap: 24px;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
     padding: 0;
-    margin: 0;
+    margin-top: -35px;
   }
   .top-position {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    padding: 0;
   }
   .footer-copyright {
-    margin-left: 370px;
+    margin-left: 375px;
   }
 }
