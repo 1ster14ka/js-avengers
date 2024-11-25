@@ -3,35 +3,47 @@ document.addEventListener('DOMContentLoaded', () => {
   const closeBtn = document.querySelector('.js-close-menu');
   const menu = document.querySelector('.js-menu-container');
   const navLinks = document.querySelectorAll('.mob-menu-list a');
+  const switchInput = document.querySelector('.switch-input');
 
-  if (!burgerBtn || !closeBtn || !menu) {
+  if (!burgerBtn || !closeBtn || !menu || !switchInput) {
     console.error('Один із необхідних елементів не знайдено');
     return;
   }
 
-  // Відкриття меню
-  burgerBtn.addEventListener('click', () => {
+  const openMenu = () => {
     menu.classList.add('active');
-    document.body.style.overflow = 'hidden'; // Блокуємо прокрутку
-  });
+    document.body.style.overflow = 'hidden';
+  };
 
-  // Закриття меню
-  closeBtn.addEventListener('click', () => {
+  const closeMenu = () => {
     menu.classList.remove('active');
-    document.body.style.overflow = ''; // Відновлюємо прокрутку
-  });
+    document.body.style.overflow = '';
+  };
 
-  // Закриття меню при кліку на посилання
+  burgerBtn.addEventListener('click', openMenu);
+
+  closeBtn.addEventListener('click', closeMenu);
+
   navLinks.forEach(link => {
     link.addEventListener('click', e => {
       e.preventDefault();
-      menu.classList.remove('active');
-      document.body.style.overflow = ''; // Відновлюємо прокрутку
+      closeMenu();
+
       const targetId = link.getAttribute('href');
       const targetElement = document.querySelector(targetId);
       if (targetElement) {
         targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     });
+  });
+
+  switchInput.addEventListener('change', () => {
+    document.body.classList.toggle('dark-theme', switchInput.checked);
+  });
+
+  document.addEventListener('click', event => {
+    if (!menu.contains(event.target) && !burgerBtn.contains(event.target)) {
+      closeMenu();
+    }
   });
 });
