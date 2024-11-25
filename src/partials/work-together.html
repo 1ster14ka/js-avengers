@@ -1,0 +1,133 @@
+<section class="contacts-section" id="contacts">
+  <div class="container container-wt">
+    <div class="head-decor">
+      <h2 class="head-work">
+        let’s
+        <span class="common-span">work together</span>
+      </h2>
+      <img
+        srcset="
+          ./img/bg-img/bg-desk-benefits.png    1x,
+          ./img/bg-img/bg-desk-benefits@2x.png 2x
+        "
+        src="../img/bg-img/bg-desk-benefits.png"
+        alt=""
+        class="wt-decor"
+      />
+      <!-- <picture>
+        <source
+          srcset="
+            ./img/bg-img/bg-desk-benefits-1x.png 1x,
+            ./img/bg-img/bg-desk-benefits-2x.png 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./img/bg-img/bg-tablet-benefits-1x.png 1x,
+            ./img/bg-img/bg-tablet-benefits-2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <img
+          src="./img/bg-img/bg-desk-benefits.png"
+          alt="Decor"
+          class="wt-decor"
+        />
+      </picture> -->
+    </div>
+    <div class="form-wrap">
+      <ul class="form-colomn">
+        <li>
+          <p class="text-idea">
+            Contact me to transform your ideas into exceptional solutions.
+          </p>
+        </li>
+        <li>
+          <div class="address">
+            <ul class="address-menu">
+              <li>
+                <div class="icon-text">
+                  <svg class="title-icon" width="24" height="24">
+                    <use href=""></use>
+                  </svg>
+                  <a
+                    class="link-address"
+                    href="tel:+380503247690"
+                    target="_blank"
+                    >+38 050 324 76 90</a
+                  >
+                </div>
+              </li>
+              <li>
+                <div class="icon-text">
+                  <svg class="title-icon" width="24" height="24">
+                    <use href=""></use>
+                  </svg>
+                  <a
+                    class="link-address"
+                    href="mailto:info@goit.ua"
+                    target="_blank"
+                    >info@goit.ua</a
+                  >
+                </div>
+              </li>
+              <li>
+                <div class="icon-text">
+                  <svg class="title-icon" width="24" height="24">
+                    <use href=""></use>
+                  </svg>
+                  <a
+                    class="link-address"
+                    href="https://www.google.com/maps/search/?api=1&query=Київ+Ю.Іллєнка+12"
+                    target="_blank"
+                  >
+                    м. Київ, вул. Ю. Іллєнка, 12
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <div class="form-div">
+        <form class="feedback-form" id="contactForm" autocomplete="off">
+          <label for="email" class="visualy-hidden"></label>
+          <input
+            class="input"
+            id="email"
+            type="email"
+            placeholder="Your email*"
+            name="email"
+            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+            autocomplete="email"
+          />
+          <label for="message" class="visually-hidden"></label>
+          <textarea
+            class="input txt-ar"
+            id="message"
+            placeholder="Message"
+            name="message"
+            rows="8"
+            autocomplete="off"
+          ></textarea>
+          <button class="btn" type="submit" id="sendMessage">
+            SEND MESSAGE
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Модальне вікно -->
+  <div class="backdrop" id="backdrop">
+    <div class="modal" id="successModal">
+      <button type="button" class="modal-close" id="closeModal">
+        <svg class="modal-icon" width="12" height="12">
+          <use href="./img/svg-icons/symbol-defs.svg#icon-x"></use>
+        </svg>
+      </button>
+      <h2 class="modalTitle common-span" id="jsTitle"></h2>
+      <p class="modalText" id="jsText"></p>
+    </div>
+  </div>
+</section>

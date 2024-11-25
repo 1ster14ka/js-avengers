@@ -1,99 +1,153 @@
-.reviews-title{
-    font-family: 'Anton', sans-serif;
-    font-weight: 400;
-font-size: 108px;
-line-height: 1.14815;
-letter-spacing: 0.02em;
-text-transform: uppercase;
-color: #292929;
-text-align: center;
-padding: 0;
-margin: 0;
+.reviews-title {
+  font-family: 'Anton', sans-serif;
+  font-weight: 400;
+  font-size: 108px;
+  line-height: 1.14815;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #292929;
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }
-.btn-section{
-    display: flex;
-    justify-content: flex-end;
-    padding: 0 32px 0 32px;
-    gap: 24px;
-}
-
-.btn-prev{
-    border: 1px solid #292929;
-border-radius: 8px;
-padding: 12px;
-width: 48px;
-height: 48px;
-cursor: pointer;
+.btn-section {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 32px 0 32px;
+  gap: 24px;
 }
 
-.btn-prev-hidden{
-    border: 1px solid #e4e5e6;
-    border-radius: 8px;
-padding: 12px;
-width: 48px;
-height: 48px;
+.btn-prev {
+  border: 1px solid #292929;
+  border-radius: 8px;
+  padding: 12px;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
 }
 
-.btn-next{
-    border: 1px solid #292929;
-border-radius: 8px;
-padding: 12px;
-width: 48px;
-height: 48px;
-cursor: pointer;    
+.btn-prev-hidden {
+  border: 1px solid #e4e5e6;
+  border-radius: 8px;
+  padding: 12px;
+  width: 48px;
+  height: 48px;
+  fill: #e4e5e6;
 }
 
-.svg-reviews{
-    fill: #e4e5e6;
-}
-.results-container{
-    padding: 80px 32px 24px 32px;
-}
-.coments-list{
-    display: flex;
-    gap: 32px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.btn-next {
+  border: 1px solid #292929;
+  border-radius: 8px;
+  padding: 12px;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
 }
 
-.coments-text{
-    display: flex;
-    flex-direction: column;
+.btn-next-hidden {
+  border: 1px solid #e4e5e6;
+  border-radius: 8px;
+  padding: 12px;
+  width: 48px;
+  height: 48px;
+  fill: #e4e5e6;
+}
+
+.results-container {
+  padding: 80px 32px 24px 32px;
+}
+.coments-list {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.coments-text {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  padding: 32px;
+  width: 592px;
+  height: 224px;
+  background: #e4e5e6;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #292929;
+}
+.author-text {
+  padding: 0;
+  margin: 0;
+}
+.author-icon {
+  border-radius: 24px;
+  width: 40px;
+  height: 40px;
+}
+.coments-author {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  gap: 16px;
+}
+.author-name {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #292929;
+  font-weight: bold;
+}
+/* Адаптивні стилі для планшетів та телефонів */
+@media (max-width: 768px) {
+  .results-container {
+    padding: 60px 32px 24px 32px;
+  }
+  .coments-list {
+    justify-content: center; /* Центруємо лише один коментар */
+  }
+
+  .coments-text {
+    width: 100%; /* Заповнюємо всю ширину екрану */
+    margin: 0 auto; /* Центруємо коментар */
+  }
+
+  .btn-section {
+    justify-content: center; /* Центруємо кнопки на маленьких екранах */
+  }
+}
+
+@media (max-width: 480px) {
+  .results-container {
+    padding: 40px 20px 24px 20px;
+  }
+
+  .coments-list {
+    justify-content: center; /* Центруємо лише один коментар */
+  }
+
+  .coments-text {
     border-radius: 16px;
-padding: 32px;
-width: 592px;
-height: 224px;
-background: #e4e5e6;
-font-family: "Poppins", sans-serif;
-font-weight: 300;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.03em;
-color: #292929;
-}
-.author-text{
-    padding: 0;
-    margin: 0;
-}
-.author-icon{
-    border-radius: 24px;
-width: 40px;
-height: 40px;
+    padding: 32px;
+    width: 320px;
+    height: 296px;
+  }
 
-}
-.coments-author{
-    display: flex;
-    align-items: center;
-    margin-top: auto;
-    gap: 16px;
-}
-.author-name{
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.5;
+  .btn-section {
+    justify-content: center; /* Центруємо кнопки на маленьких екранах */
+  }
+
+  .reviews-title {
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 1.23077;
     letter-spacing: 0.03em;
+    text-transform: uppercase;
     color: #292929;
-    font-weight: bold;
+  }
 }

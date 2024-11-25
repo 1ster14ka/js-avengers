@@ -14,7 +14,7 @@ const accordion = new Accordion(faqContainer, {
 
     const allQuestions = document.querySelectorAll('.ac');
     allQuestions.forEach(question => {
-      question.style.backgroundColor = 'white';
+      question.style.backgroundColor = '#F0F0F0';
       question.style.borderRadius = 'none';
       question.style.borderBottom = '1px solid #e4e5e6';
     });
@@ -46,7 +46,7 @@ const accordion = new Accordion(faqContainer, {
     }
 
     question.style.borderRadius = 'none';
-    question.style.backgroundColor = 'white';
+    question.style.backgroundColor = '#F0F0F0';
     question.style.borderBottom = '1px solid #e4e5e6';
 
     //icon rotation
@@ -57,3 +57,6 @@ const accordion = new Accordion(faqContainer, {
     );
   },
 });
+
+//first question permanently opened
+accordion.open(0);

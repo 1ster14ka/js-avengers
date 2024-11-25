@@ -6,7 +6,7 @@
   max-width: 360px;
 }
 .logo {
-  color: green;
+  color: #292929;
   font-weight: 400;
   font-size: 24px;
   line-height: 100%;
@@ -17,7 +17,7 @@
   align-items: center;
 }
 .logo-header-span {
-  color: #292929;
+  color: #00b068;
 }
 .navigation {
   display: none;

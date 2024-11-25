@@ -1,60 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>reviews</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">   
-    <link href="../css/reviews.css" rel="stylesheet">
-</head>
-<body>
-    <section class="reviews">
-        <h1 class="reviews-title">REVIEWS</h1>
+<section class="reviews">
+  <h1 class="reviews-title">REVIEWS</h1>
 
-        <div class="results-container">
-            <ul class="coments-list">
-                <li class="coments-text">       
-                    <p class="author-text">Work with was extraordinary! He turned out to be a very competent and responsible specialist. 
-                    The projects were completed on time and the result exceeded my expectations</p>
-                    
-                    <div class="coments-author">   
-                        <img src="./img/Featured icon.jpg" alt="Natalia Shevchenko" class="author-icon">
-                        <p class="author-name">Natalia Shevchenko</p>
-                    </div>
-                </li>
-                
-                <li class="coments-text">I have the honor to recommend him as an exceptional professional in his field. 
-                    His knowledge and expertise are undeniable. Cooperation with him always brings impressive results.
-
-                    <div class="coments-author">
-                        
-                        <p class="author-name">Dmytro Nazarenko</p>
-                    </div>
-                </li>
-
-            </ul>
-
-        </div>
-
-        <div class="btn-section">
-
-            <button class="btn-prev btn-prev-hidden">
-                <svg class="svg-reviews" width="24px" height="24px">
-                    <use href="../img/svg-icons/symbol-defs.svg#icon-arrow-left2"></use>
-                </svg>
-            </button>
-            <button class="btn-next">
-                <svg width="24px" height="24px">
-                    <use href="../img/svg-icons/symbol-defs.svg#icon-arrow-right2"></use>
-                </svg>       
-            </button>
-        </div>
-    </section>
-
-
-    
-</body>
-</html>
+  <div class="results-container">
+    <ul class="coments-list"></ul>
+  </div>
+  <div class="btn-section">
+    <button class="btn-prev btn-prev-hidden">
+      <svg class="svg-reviews" width="24px" height="24px">
+        <use href="../img/svg-icons/symbol-defs.svg#icon-arrow-left2"></use>
+      </svg>
+    </button>
+    <button class="btn-next btn-next-hidden">
+      <svg width="24px" height="24px">
+        <use href="../img/svg-icons/symbol-defs.svg#icon-arrow-right2"></use>
+      </svg>
+    </button>
+  </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
