@@ -112,3 +112,117 @@ padding: 0px;
   width: 526px;
 height: 408px;
 }
+@media (max-width: 1280px) {
+  .benefits-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+  }
+
+  .benefits-header {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .hend {
+    font-size: 108px;
+  }
+
+  .benefits-list {
+    grid-template-columns: repeat(3, 1fr); /* Три колонки */
+    gap: 24px;
+  }
+
+  .benefit-item {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .panorama {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .tekst {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .benefits-header {
+    text-align: center;
+    align-items: center;
+  }
+
+  .hend {
+    font-size: 96px;
+    text-align: center;
+  }
+
+  .benefits-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .benefit-item {
+    align-items: center;
+    text-align: center;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .panorama {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .tekst {
+    font-size: 1rem;
+  }
+}
+
+/* Для экранов шириной до 360px */
+@media (max-width: 360px) {
+  .benefits-header {
+    text-align: center;
+    align-items: center;
+  }
+
+  .hend {
+    font-size: 72px;
+    text-align: center;
+  }
+
+  .benefits-list {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .benefit-item {
+    align-items: center;
+    text-align: center;
+  }
+
+  .icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .panorama {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .tekst {
+    font-size: 0.9rem;
+  }
+}
