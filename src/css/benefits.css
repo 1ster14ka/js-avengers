@@ -5,24 +5,17 @@ vertical-align: middle;
 text-align: left;
 }
 .panorama {
-  font-family: "Poppins Light";
-  font-weight: 400; 
-  color: #555; 
-  margin: 0; 
-  text-align: left;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
-  letter-spacing: 0.2px;
-  line-height: 24px;
+  line-height: 1.5;
+  color: #555;
 }
 .tekst{
-  text-align: left;
-  font-family: "Poppins Regular";
-  font-weight: 600; 
-  text-transform: uppercase; 
-  font-size: 1.2rem;
-  margin-bottom: 8px; 
-  color: #333; 
-  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  line-height: 1.56;
+  text-transform: uppercase;
+  color: #333;
 }
 .future {
   font-family: Impact;
@@ -79,15 +72,16 @@ border-radius: 16px;
   z-index: 2;
 }
 .icon {
-  display: inline-block; /* Это нужно для выравнивания */
-  width: 50px;
-  height: 50px;
-  margin-bottom: 10px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #bcdfd1;
+  border-radius: 8px;
 }
 
-.icon svg {
-  fill: currentColor; /* Наследует цвет текста */
-}
+
 .benefits-list {
   list-style: none;
 left: 0px;
