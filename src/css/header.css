@@ -1,16 +1,15 @@
 body.dark-theme {
     background-color: #292929;
-    /* Темний фон */
-    color: #e4e5e6;
-    /* Світлий текст */
+    color: #E4E5E6;
+ 
 }
 
 body.dark-theme .logo {
-    color: #e4e5e6;
+    color: #E4E5E6;
 }
 
 body.dark-theme .logo-header-span {
-    color: #00e89b;
+    color: #00b068;
 }
 
 body.dark-theme .nav-item-head a {
@@ -18,9 +17,8 @@ body.dark-theme .nav-item-head a {
 }
 
 body.dark-theme .burger-btn {
-    fill: #e4e5e6;
-    /* Для зміни кольору іконок */
-}
+    fill: #E4E5E6;
+  
 
 
 .header-container {
