@@ -18,7 +18,7 @@ body.dark-theme .nav-item-head a {
 
 body.dark-theme .burger-btn {
     fill: #E4E5E6;
-  
+} 
 
 
 .header-container {
@@ -46,6 +46,7 @@ body.dark-theme .burger-btn {
   display: none;
 }
 .nav-list {
+    
 }
 .nav-item {
 }

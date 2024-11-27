@@ -3,12 +3,14 @@ const modalOverlay = document.querySelector('.modal-overlay'); // Модалка
 const closeModalBtn = modalOverlay.querySelector('.icon-close'); // Крестик в модалке
 const switchInput = document.querySelector('.switch-input');
 const wrappArrow = document.querySelector('.wrapp-arrow');
+const reviewsSwiper = document.querySelector('.reviews-swiper ');
 
 // Открыть модалку
 burgerBtn.addEventListener('click', () => {
   modalOverlay.classList.add('active'); // Добавляем класс для отображения модалки
   // burgerBtn.style.display = 'none';
   wrappArrow.style.display = 'none';
+  reviewsSwiper.style.display = 'none';
 });
 
 // Закрыть модалку
@@ -16,6 +18,7 @@ closeModalBtn.addEventListener('click', () => {
   modalOverlay.classList.remove('active'); // Убираем класс для скрытия модалки
   // burgerBtn.style.display = 'flex';
   wrappArrow.style.display = 'flex';
+  reviewsSwiper.style.display = 'flex';
 });
 
 // Закрытие модалки по клику вне её области
