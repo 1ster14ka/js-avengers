@@ -1,3 +1,26 @@
+body.dark-theme {
+    background-color: #292929;
+    color: #E4E5E6;
+ 
+}
+
+body.dark-theme .logo {
+    color: #E4E5E6;
+}
+
+body.dark-theme .logo-header-span {
+    color: #00b068;
+}
+
+body.dark-theme .nav-item-head a {
+    color: #e4e5e6;
+}
+
+body.dark-theme .burger-btn {
+    fill: #E4E5E6;
+} 
+
+
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -90,6 +113,7 @@ input:checked+.slider:before {
   display: none;
 }
 .nav-list {
+    
 }
 .nav-item {
 }
@@ -103,6 +127,56 @@ input:checked+.slider:before {
   height: 32px;
   padding: 0;
 }
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+
+}
+
+.switch-input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.switch-label {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #E4E5E6;
+    transition: background-color 0.3s;
+    border-radius: 50px;
+}
+
+.switch-label::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: #00B068;
+    border-radius: 50%;
+    top: 3px;
+    left: 3px;
+    transition: transform 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.switch-input:checked+.switch-label {
+    background-color: #292929;
+}
+
+.switch-input:checked+.switch-label::before {
+    transform: translateX(24px);
+}
+
+
 
 @media only screen and (min-width: 768px) {
   .navigation {
@@ -130,10 +204,16 @@ input:checked+.slider:before {
     letter-spacing: 0.03em;
     font-family: 'Poppins', sans-serif;
   }
+.switch {
+    display: none;
+}
 }
 
 @media only screen and (min-width: 1200px) {
   .header-container {
     max-width: 1280px;
   }
+.switch{
+    display: block;
+}     
 }
