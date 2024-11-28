@@ -25,7 +25,7 @@
 </symbol>
 
 
-<symbol id="icon-vector-up" viewBox="0 0 50 32">
+<!-- <symbol id="icon-vector-up" viewBox="0 0 50 32">
   <path 
     d="M46.222 28.444l-21.333-21.333-21.333 21.333" 
     stroke="currentColor" 
@@ -34,7 +34,7 @@
     stroke-linecap="round" 
     stroke-width="2"
   ></path>
-</symbol>
+</symbol> -->
 
 
 <symbol id="icon-arrow-narrow-right" viewBox="0 0 32 32">
