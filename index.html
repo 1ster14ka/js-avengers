@@ -12,7 +12,7 @@
     <script type="module" crossorigin src="/js-avengers/index.js"></script>
     <link rel="modulepreload" crossorigin href="/js-avengers/assets/vendor-Bdl5oSAj.js">
     <link rel="stylesheet" crossorigin href="/js-avengers/assets/vendor-DLkfUfUw.css">
-    <link rel="stylesheet" crossorigin href="/js-avengers/assets/index-SeFIHW3O.css">
+    <link rel="stylesheet" crossorigin href="/js-avengers/assets/index-efMScYkw.css">
   </head>
   <body>
     <header class="header">
@@ -799,11 +799,16 @@
 </footer>
 
     <div class="modal-overlay">
-  <div class="header-container test">
+  <div class="header-container">
     <a href="" class="logo"
-      ><span class="logo-header-span">Lloyd</span>Jefferson.</a
+      >Lloyd<span class="logo-header-span">Jefferson.</span></a
     >
-
+    <div class="switch-container">
+      <label id="switch" class="switch">
+        <input type="checkbox" onchange="toggleTheme()" id="slider" />
+        <span class="slider round overlay"></span>
+      </label>
+    </div>
     <button type="button" class="burger-btn modal-btn">
       <svg class="icon-close" width="22" height="16">
         <use href="/js-avengers/assets/symbol-defs-qnGV90tk.svg#icon-x"></use>
